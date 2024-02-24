@@ -1,0 +1,21 @@
+import type { Sketch, SketchMode, SketchSettings } from "ssam";
+
+declare global {
+  interface Window {
+    SKETCH: string;
+  }
+}
+
+type SsamSketchModule = {
+  sketch: Sketch<SketchMode>;
+  settings: SketchSettings;
+};
+
+try {
+  const importedModule: SsamSketchModule = await import(
+    // defined in env via CLI
+    `./${window.SKETCH}.ts`
+  );
+} catch {
+  console.error(`module import error`);
+}

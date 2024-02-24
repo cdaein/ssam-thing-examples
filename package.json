@@ -1,0 +1,30 @@
+{
+  "name": "ssam-thing-examples",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.20",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.4",
+    "vite-plugin-ssam-export": "^0.1.1",
+    "vite-plugin-ssam-ffmpeg": "^0.2.3",
+    "vite-plugin-ssam-git": "^0.1.2",
+    "vite-plugin-ssam-timelapse": "^0.1.2"
+  },
+  "dependencies": {
+    "@thi.ng/dl-asset": "^2.3.67",
+    "@thi.ng/geom": "^6.0.31",
+    "@thi.ng/hiccup": "^5.1.14",
+    "@thi.ng/hiccup-canvas": "^2.5.18",
+    "@thi.ng/pixel": "^6.1.11",
+    "@thi.ng/transducers": "^8.9.6",
+    "ssam": "^0.18.4"
+  }
+}
