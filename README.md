@@ -6,4 +6,4 @@ A collection of creative coding example sketches using [Ssam.js](https://github.
 
 1. Clone this repo.
 2. `npm install`
-3. `SKETCH=<sketch-file-name> npm run dev``
+3. `SKETCH=<sketch-file-name> npm run dev`
