@@ -39,7 +39,7 @@ export const settings: SketchSettings = {
   dimensions: [800, 800],
   pixelRatio: window.devicePixelRatio,
   animate: false,
-  filename: "image-load",
+  filename: import.meta.url?.split("/").pop()?.split(".")[0] || undefined,
 };
 
 ssam(sketch, settings);
