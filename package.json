@@ -24,6 +24,7 @@
     "@thi.ng/hiccup": "^5.1.14",
     "@thi.ng/hiccup-canvas": "^2.5.18",
     "@thi.ng/pixel": "^6.1.11",
+    "@thi.ng/sax": "^2.1.102",
     "@thi.ng/transducers": "^8.9.6",
     "ssam": "^0.18.4"
   }
