@@ -14,6 +14,7 @@ type SsamSketchModule = {
 try {
   const importedModule: SsamSketchModule = await import(
     // defined in env via CLI
+    /* @vite-ignore */
     `./${window.SKETCH}.ts`
   );
 } catch {
