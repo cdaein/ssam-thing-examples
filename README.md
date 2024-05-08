@@ -10,7 +10,7 @@ A collection of creative coding example sketches using [Ssam.js](https://github.
 
 ## Examples
 
-|    source file     |                    result                    |   source file   |                  reulst                   |
+|    source file     |                    result                    |   source file   |                  result                   |
 | :----------------: | :------------------------------------------: | :-------------: | :---------------------------------------: |
 | `basic-shapes.ts`  |  ![basic shapes](./output/basic-shapes.png)  |   `paths.ts`    |       ![paths](./output/paths.png)        |
 |  `paths-hole.ts`   | ![paths with holes](./output/paths-hole.png) | `image-load.ts` | ![image loading](./output/image-load.png) |
