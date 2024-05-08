@@ -10,23 +10,23 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@types/node": "^20.11.20",
+    "@types/node": "^20.12.11",
     "prettier": "^3.2.5",
-    "typescript": "^5.3.3",
-    "vite": "^5.1.4",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
     "vite-plugin-ssam-export": "^0.1.1",
     "vite-plugin-ssam-ffmpeg": "^0.2.3",
     "vite-plugin-ssam-git": "^0.1.2",
     "vite-plugin-ssam-timelapse": "^0.1.2"
   },
   "dependencies": {
-    "@thi.ng/dl-asset": "^2.3.67",
-    "@thi.ng/geom": "^6.0.31",
-    "@thi.ng/hiccup": "^5.1.14",
-    "@thi.ng/hiccup-canvas": "^2.5.18",
-    "@thi.ng/pixel": "^6.1.11",
-    "@thi.ng/sax": "^2.1.102",
-    "@thi.ng/transducers": "^8.9.6",
-    "ssam": "^0.18.4"
+    "@thi.ng/dl-asset": "^2.3.81",
+    "@thi.ng/geom": "^7.0.0",
+    "@thi.ng/hiccup": "^5.2.1",
+    "@thi.ng/hiccup-canvas": "^3.0.0",
+    "@thi.ng/pixel": "^6.1.32",
+    "@thi.ng/sax": "^2.1.122",
+    "@thi.ng/transducers": "^9.0.5",
+    "ssam": "^0.18.5"
   }
 }
