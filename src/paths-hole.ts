@@ -1,4 +1,10 @@
-import { complexPolygon, flip, group, polygon } from "@thi.ng/geom";
+import {
+  complexPolygon,
+  flip,
+  group,
+  polygon,
+  type Polygon,
+} from "@thi.ng/geom";
 import { draw } from "@thi.ng/hiccup-canvas";
 import { Sketch, SketchSettings, ssam } from "ssam";
 
@@ -19,8 +25,8 @@ export const sketch: Sketch<"2d"> = ({ wrap, context: ctx }) => {
     [300, 350],
   ]);
 
-  // FIX: typescript error
-  const combined = complexPolygon(poly1, [flip(poly2)]);
+  // NOTE: need casting for flip() return
+  const combined = complexPolygon(poly1, [flip(poly2) as Polygon]);
 
   wrap.render = ({ width, height }) => {
     ctx.fillStyle = `gray`;
