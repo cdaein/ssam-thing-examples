@@ -25,7 +25,7 @@ export const sketch: Sketch<"2d"> = ({ wrap, context: ctx, width, height }) => {
     // press s to save as SVG
     if (ev.key === "s") {
       const src = g.asSvg(
-        g.svgDoc({ viewBox: [0, 0, width, height], stroke: null }, group1),
+        g.svgDoc({ viewBox: `0 0 ${width} ${height}`, stroke: null }, group1),
       );
       console.log(src);
 

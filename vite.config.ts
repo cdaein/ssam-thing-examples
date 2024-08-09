@@ -10,6 +10,7 @@ export default defineConfig(({ mode }) => {
     base: "./",
     plugins: [ssamExport(), ssamGit(), ssamFfmpeg()],
     build: {
+      target: "ESNEXT",
       outDir: "./dist",
       assetsDir: ".",
       rollupOptions: {
