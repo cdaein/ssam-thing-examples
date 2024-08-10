@@ -12,7 +12,7 @@ const sketch: Sketch<"2d"> = ({ wrap, context: ctx, width, height }) => {
   const colB = oklab(rgb(hsv([0.6, 1, 1])));
   const colorStops: Oklab[] = [];
 
-  const numStops = 36;
+  const numStops = 24;
 
   // generate oklab gradient colors
   for (let i = 0; i < numStops; i++) {
@@ -21,14 +21,15 @@ const sketch: Sketch<"2d"> = ({ wrap, context: ctx, width, height }) => {
   }
 
   // shapes
-  const margin = 0.06;
+  const margin = 0.08;
+  const gap = 0.012;
   const rects = colorStops.map((col, i) =>
     g.rectWithCentroid(
       [
         width * (margin + (i * (1 - margin * 2)) / (numStops - 1)),
         height * 0.5,
       ],
-      [width * ((1 - margin * 2) / (numStops - 1) - 0.01), height * 0.5],
+      [width * ((1 - margin * 2) / (numStops - 1) - gap), height * 0.7],
       {
         fill: col,
       },
