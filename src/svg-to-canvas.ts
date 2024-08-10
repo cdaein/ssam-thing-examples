@@ -10,8 +10,7 @@
  */
 
 import { DEFAULT, defmulti } from "@thi.ng/defmulti";
-import { group, rect } from "@thi.ng/geom";
-import { type IHiccupShape } from "@thi.ng/geom-api";
+import { IHiccupShape2, group, rect, type IHiccupShape } from "@thi.ng/geom";
 import { draw } from "@thi.ng/hiccup-canvas";
 import { type ParseEvent, parse } from "@thi.ng/sax";
 import {
@@ -54,7 +53,7 @@ const sketch: Sketch<"2d"> = async ({ wrap, context: ctx }) => {
   // you can return any type of data you need. here, it uses @thi.ng/geom objects
   parseElement.add("svg", (e) => [...parsedChildren(e)]);
   parseElement.add("g", (e) => {
-    const children = [...parsedChildren(e)] as unknown as IHiccupShape[];
+    const children = [...parsedChildren(e)] as IHiccupShape2[];
     return group(e.attribs, children);
   });
   parseElement.add("rect", (e) => {
@@ -71,7 +70,7 @@ const sketch: Sketch<"2d"> = async ({ wrap, context: ctx }) => {
 
   const parsed = parseElement(
     transduce(parse(), last(), svgText),
-  ) as IHiccupShape[];
+  ) as IHiccupShape2[];
   console.log({ parsed });
 
   wrap.render = ({ width, height }) => {
