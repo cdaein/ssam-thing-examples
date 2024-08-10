@@ -34,7 +34,7 @@ export const sketch: Sketch<"2d"> = ({ context: ctx }) => {
   ]);
 
   //----------
-  const path1 = new g.PathBuilder({
+  const path1 = g.pathBuilder({
     translate: [0, 300],
     stroke: "blue",
     weight: 4,
@@ -58,8 +58,7 @@ export const sketch: Sketch<"2d"> = ({ context: ctx }) => {
     translate: [0, 400],
   });
 
-  // FIX: arcTo() doesn't seem to work?
-  const path2 = new g.PathBuilder({ stroke: "red", translate: [0, 500] });
+  const path2 = g.pathBuilder({ stroke: "red", translate: [0, 500] });
   path2.moveTo(pts[0]);
   path2.arcTo(pts[2], [50, 50], 0, false, false);
 
